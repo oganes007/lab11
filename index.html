@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+<style type="text/css">
+    * {
+    margin:auto;
+    margin-top: 50px;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.sun {
+    
+    width: 100px;
+    height: 100px;
+    background: yellow;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    margin:auto;
+
+}
+.sun:hover {    
+    background-color:transparent;
+    height:100px;
+    width:100px;
+    border-radius:50%;
+    box-shadow:25px 10px 0 0 rgb(207, 207, 207);
+    margin:auto;
+}
+.triangle-up {
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid yellow;
+}
+.triangle-up:hover{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-top: 100px solid rgb(207, 207, 207);
+}
+.rectangle {
+    width: 200px;
+    height: 100px;
+    background: yellow;
+
+}
+.rectangle:hover {
+    width: 150px;
+    height: 100px;
+    -webkit-transform: skew(20deg);
+       -moz-transform: skew(20deg);
+         -o-transform: skew(20deg);
+    background: rgb(207, 207, 207);
+}
+html, body {
+    width: 100%;
+    height:100%;
+  }
+  
+body {
+      background-color: black;
+  }
+  
+
+a {
+width: 10%;
+background-color: yellow;
+text-decoration: none;
+font-size: 16px;
+font-family: 'Courier New', Courier, monospace;
+display: flex;
+justify-content: center;
+}
+a:hover {
+    background-color: rgb(136, 136, 136);
+    color: white;
+  }
+</style>
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="triangle-up"></div>
+    <div class="rectangle"></div>
+</body>
+</html>
